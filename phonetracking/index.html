@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	
+    Advertiser Website
+
+</title></head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>Advertiser Website</h1>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        (function () {
+            var oldonload = window.onload;
+            window.onload = function() {
+                __madiaai_loaded=true;
+                var img = document.createElement("img");
+                var host = "http://mediaai.elasticbeanstalk.com";
+                img.setAttribute('async', 'true');
+                img.height = "1";
+                img.width = "1";
+                img.style = "border-style:none;";
+                img.alt = "";
+                img.type = "text/javascript";
+                img.src = host + "/content/out.gif";
+                document.body.appendChild(img);
+                                
+                if (oldonload) {
+                    oldonload()
+                } 
+            };
+        }());
+    </script>
+</body>
+</html>
